@@ -1,0 +1,50 @@
+### an endpoint that handles users registration
+POST http://localhost:6060/register
+Content-Type: application/json
+
+{
+    "username": "tomiwa001",
+    "email": "tomiwamonehin@gmail.com",
+    "password": "kennedy@#$"
+}
+
+### an endpoint that handles users login
+POST  http://localhost:6060/login
+Content-Type: application/json
+
+{
+    "username": "tomiwa001",
+    "password": "kennedy@#$"
+
+}
+
+### an endpoint for adding books
+POST http://localhost:6060/create_book
+Content-Type: application/json
+
+{
+    "title": "make today count",
+    "author": "john c. maxwell",
+    "year_published": 2022,
+    "isbn": "1234567890"
+}
+
+### an endpoint for getting all books
+GET  http://localhost:6060/books
+Content-Type: application/json
+
+### an endpoint for  updating books 
+PUT http://localhost:6060/update_books/3
+Content-Type: application/json
+
+{
+    "title": "ataktos",
+    "author": "Rev barnabars Alumogie",
+    "year_published": 2023,
+    "isbn": "0987654321"
+}
+
+### an endpoint for deleting  books 
+DELETE http://localhost:6060/books/3
+Content-Type: application/json
+
